@@ -1,0 +1,23 @@
+{
+
+    "hooks": [
+
+        {
+
+            "name": "app.payment.processor.super_payment_card",
+
+            "script": "./cartridge/scripts/hooks/payment/processor/super_payment_card"
+
+        },
+
+        {
+
+            "name": "app.payment.form.processor.super_payment_card",
+
+            "script": "./cartridge/scripts/hooks/payment/processor/super_payment_card_form_processor"
+
+        }
+
+    ]
+
+}

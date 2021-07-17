@@ -1,0 +1,41 @@
+{
+  "name": "Custom Homepage",
+  "description": "A Storefront Page Type",
+  "region_definitions": [
+    {
+      "id": "products1",
+      "name": "Products Region 1",
+      "max_components": 1
+    },
+    {
+      "id": "products2",
+      "name": "Products Region 2",
+      "max_components": 1
+    },
+    {
+      "id": "products3",
+      "name": "Products Region 3",
+      "max_components": 1
+    },
+    {
+      "id": "products4",
+      "name": "Products Region 4",
+      "max_components": 1
+    },
+    {
+      "id": "products5",
+      "name": "Products Region 5",
+      "max_components": 1
+    },
+    {
+      "id": "products6",
+      "name": "Products Region 6",
+      "max_components": 1
+    },
+    {
+      "id": "text",
+      "name": "Text Region",
+      "max_components": 1
+    }
+  ]
+}

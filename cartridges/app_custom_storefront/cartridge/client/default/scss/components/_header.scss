@@ -1,0 +1,29 @@
+@import "~base/components/header";
+
+
+.brand {
+    position: absolute;
+    left: 50%;
+    display: block;
+    text-align: center;
+
+    img {
+        width: 70%;
+    }
+
+    @include media-breakpoint-up(lg) {
+        width: 14.125em; /* 226/16 */
+        margin-left: -7.0625em; /* 113/16 */
+        padding-top: 1.1em;
+    }
+
+    @include media-breakpoint-down(md) {
+        width: 8em; /* 64/16 */
+        margin-left: -5em;
+        padding-top: 1.1em;
+
+        .form-control.search-field{
+            width: 50%;
+        }
+    }
+}
