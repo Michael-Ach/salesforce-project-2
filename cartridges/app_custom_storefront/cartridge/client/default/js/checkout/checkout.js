@@ -249,7 +249,7 @@ var scrollAnimate = require('base/components/scrollAnimate');
                     var paymentForm = billingAddressForm + '&' + contactInfoForm + '&' + paymentInfoForm;
 
                     if ($('.data-checkout-stage').data('customer-type') === 'registered') {
-                        // if payment method is credit card
+                        // if payment method is credit card or super_payment_card
                         if ($('.payment-information').data('payment-method-id') === 'CREDIT_CARD'
 
                         || $('.payment-information').data('payment-method-id') === 'super_payment_card') {
