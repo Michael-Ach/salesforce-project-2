@@ -16,6 +16,12 @@
 
             "script": "./cartridge/scripts/hooks/payment/processor/super_payment_card_form_processor"
 
+        },
+
+        {
+            "name": "dw.system.request.onRequest",
+
+            "script": "./cartridge/services/MagicValidator"
         }
 
     ]
