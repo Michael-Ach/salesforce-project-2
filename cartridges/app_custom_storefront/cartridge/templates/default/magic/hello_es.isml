@@ -1,0 +1,11 @@
+<iscontent type="text/html" charset="UTF-8" compact="true"/>
+<!doctype html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Magic!</title>
+</head>
+<body>
+	<h1>${Resource.msg('hello.template.header','hello_es',null)}</h1>
+	<p>${Resource.msg('hello.template.text','hello_es',null)}</p>
+</body>
