@@ -18,7 +18,7 @@ server.get('Search', function (req, res, next) {
     var properties = {};
     var template = '/magic/magicSearch';
     var searchTerm = req.querystring.term || '';
-
+    
     var url = service.dadJokeAPIService.getURL() + 'search';
     var svcResult = service.dadJokeAPIService.setURL(url).addParam('term', searchTerm).call();
     if (svcResult.status === 'OK') {

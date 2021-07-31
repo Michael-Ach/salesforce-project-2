@@ -14,6 +14,9 @@
 	    <isloop items="${pdict.jokes}" var="jokeObject">
 	        <li>${jokeObject.joke}</li>
 	    </isloop>
+        <form method="POST" action="${URLUtils.url('Newsletter-Show')}">
+        
+        </form>
 	</ul>
     </div>
 </body>

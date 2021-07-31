@@ -23,23 +23,19 @@ var pageMetaData = require('*/cartridge/scripts/middleware/pageMetaData');
  * @param {renders} - isml
  * @param {serverfunction} - get
  */
-server.get('Start', consentTracking.consent, cache.applyDefaultCache, function (req, res, next) {
+server.get('Show', consentTracking.consent, cache.applyDefaultCache, function (req, res, next) {
     var Site = require('dw/system/Site');
     var PageMgr = require('dw/experience/PageMgr');
     var pageMetaHelper = require('*/cartridge/scripts/helpers/pageMetaHelper');
 
     pageMetaHelper.setPageMetaTags(req.pageMetaData, Site.current);
 
-    var magicSearchForm = server.forms.getForm('magic');
-
     var page = PageMgr.getPage('big');
 
     if (page && page.isVisible()) {
         res.page('big');
     } else {
-        res.render('home/homePage', {
-            magicSearchForm: magicSearchForm
-        });
+        res.render('home/homePage');
     }
     next();
 }, pageMetaData.computedPageMetaData);
