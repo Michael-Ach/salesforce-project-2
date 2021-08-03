@@ -87,7 +87,7 @@ server.get(
     server.middleware.https,
     function (req, res, next) {
         res.render('/newsletter/newslettersuccess', {
-            continueUrl: URLUtils.url('Newsletter-Show'),
+            continueUrl: URLUtils.url('Home-Show'),
         	newsletterForm: server.forms.getForm('newsletter')
         });
 

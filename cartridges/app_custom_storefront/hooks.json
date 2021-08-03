@@ -22,6 +22,12 @@
             "name": "dw.system.request.onRequest",
 
             "script": "./cartridge/services/MagicValidator"
+        },
+
+        {
+            "name": "newsletter.email",
+            
+            "script": "./cartridge/scripts/hooks/newsletterEmail.js"
         }
 
     ]

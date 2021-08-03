@@ -39,23 +39,27 @@
             <div class="home-email-signup">
                 <div class="container">
                         <div class="row">
-                            <div class="col-sm-5">
-                                <a class="btn btn-primary" href="${URLUtils.url('Newsletter-Show')}">
-                                    ${Resource.msg('button.form.emailsignup', 'homePage', null)}    
-                                </a>
-                            </div>
-                            <div class="col-sm-7 email-description">${Resource.msg('description.form.newsletter', 'homePage', null)}</div>
+
+                            <iscomment> <div class="col-sm-3 email-description">${Resource.msg('description.form.newsletter', 'homePage', null)}</div> </iscomment>
                             <form action="${URLUtils.url('Magic-Search')}" class="" method="GET">
                                 <div class="form-group" required>
                                     <label class="form-control-label" for="term">
                                         <isprint value="${pdict.magicSearchForm.label}" encoding="htmlcontent" />
                                     </label>
-                                    <input type="text" class="form-control" id="term" name="term"
+                                    <input type="text" class="" id="term" name="term"
                                         <isprint value="${pdict.magicSearchForm.term.attributes}" encoding="off" />>
                                     <div class="invalid-feedback"></div>
                                     <button class="btn btn-primary" type="submit">Search Joke</button>
                                 </div>
                             </form>
+
+                            <div class="col-sm-3">
+                                <a class="btn btn-primary" href="${URLUtils.url('Newsletter-Show')}">
+                                    ${Resource.msg('button.form.emailsignup', 'homePage', null)}    
+                                </a>
+                            </div>
+                            <div class="col-sm-3 email-description">${Resource.msg('description.form.newsletter', 'homePage', null)}</div>
+
                         </div>
                 </div>
             </div>

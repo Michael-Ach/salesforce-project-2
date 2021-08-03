@@ -1,6 +1,19 @@
 <isdecorate template="common/layout/page">
-	<h3>
-		${pdict.newsletterForm.fname.value} ${pdict.newsletterForm.lname.value}, thank you for registering! 
-	</h3>
-	Back to <a href="${pdict.continueUrl}">Newsletter Subscription</a>.
+<isscript>
+var assets = require('*/cartridge/scripts/assets.js');
+ assets.addCss('/css/login.css');
+</isscript>
+ 
+ <div class="container login-page">
+	<div class="row justify-content-center equal-height">
+		<div class="col-sm-8 col-md-6">
+			<div class="card">
+				<div class="card-body" >
+					<h1>${pdict.newsletterForm.lname.value} ${pdict.newsletterForm.fname.value}, ${Resource.msg('title.thank.you.page','confirmation',null)}</h1>
+				</div>
+			<p>Continue to <a href="${pdict.continueUrl}">Home Page</a></p>
+			</div>
+		</div>
+	</div>
+ </div>
 </isdecorate>

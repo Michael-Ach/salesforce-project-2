@@ -131,10 +131,16 @@
     padding-top: 0.375em;
     color: #fff; }
 
-.home-email-signup {
-  background-color: var(--skin-banner-background-color-2); }
-
 .hp-product-grid .hp-product-content span.largeText {
   font-size: 3.5em;
   font-weight: 200;
   color: var(--skin-primary-color-1); }
+
+.home-email-signup {
+  background-color: #191933; }
+  .home-email-signup > .container {
+    padding-top: 0.625em;
+    padding-bottom: 0.625em; }
+  .home-email-signup .email-description {
+    padding-top: 0.375em;
+    color: #fff; }
