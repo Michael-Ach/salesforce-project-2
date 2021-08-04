@@ -6,20 +6,19 @@
 
     </isscript>
 
+    <isif condition="${paymentOption.ID === 'CREDIT_CARD'}">
     <a class="${classForCardTab}" data-toggle="tab" href="${'#credit-card-content-' + paymentOption.ID}" role="tab">
 
-        <img class="credit-card-option"
-
-                src="${URLUtils.staticURL('/images/credit.png')}"
-
-                height="32"
-
-                alt="${paymentOption.name}"
-
-                title="${paymentOption.name}"
-
-        >
+        <img class="credit-card-option" src="${URLUtils.staticURL('/images/credit.png')}" height="32" alt="${paymentOption.name}" title="${paymentOption.name}">
 
     </a>
+    </isif>
+    <isif condition="${paymentOption.ID === 'super_payment_card'}">
+    <a class="${classForCardTab}" data-toggle="tab" href="${'#credit-card-content-' + paymentOption.ID}" role="tab">
+
+        <img class="credit-card-option" src="${URLUtils.staticURL('/images/super.png')}" height="32" alt="${paymentOption.name}" title="${paymentOption.name}">
+
+    </a>
+    </isif>
 
 </li>

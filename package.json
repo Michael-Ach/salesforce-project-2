@@ -34,7 +34,9 @@
   ],
   "paths": {
     "base": "../storefront-reference-architecture/cartridges/app_storefront_base/",
-    "plugin_instorepickup": "../plugin_instorepickup/cartridges/plugin_instorepickup"
+    "plugin_instorepickup": "../plugin_instorepickup/cartridges/plugin_instorepickup",
+    "link_braintree": "../link_braintree/cartridges/int_braintree",
+    "int_cloudinary_sfra": "../link_cloudinary/cartridges/int_cloudinary_sfra"
 
   },
   "dependencies": {

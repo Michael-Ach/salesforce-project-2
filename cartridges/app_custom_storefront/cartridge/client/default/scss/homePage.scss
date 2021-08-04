@@ -1,9 +1,9 @@
 @import "~base/homePage";
 
 
-// .home-email-signup {
-//     background-color: var(--skin-banner-background-color-2);
-// }
+.home-email-signup {
+    background-color: var(--skin-banner-background-color-2);
+}
 
 .hp-product-grid .hp-product-content span.largeText {
     font-size: 3.5em;
@@ -11,17 +11,5 @@
     color: var(--skin-primary-color-1);
 }
 
-.home-email-signup {
-    background-color: rgb(25, 25, 51);
 
-    > .container {
-        padding-top: 0.625em;
-        padding-bottom: 0.625em;
-    }
-
-    .email-description {
-        padding-top: 0.375em;
-        color: $white;
-    }
-}
 

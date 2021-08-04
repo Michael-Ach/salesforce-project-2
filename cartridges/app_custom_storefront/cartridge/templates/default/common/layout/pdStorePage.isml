@@ -37,7 +37,7 @@
                 <isreplace/>
             </div>
             <div class="home-email-signup">
-                <div class="container">
+                <div class="container col-md-6">
                         <div class="row">
 
                             <iscomment> <div class="col-sm-3 email-description">${Resource.msg('description.form.newsletter', 'homePage', null)}</div> </iscomment>
@@ -52,13 +52,14 @@
                                     <button class="btn btn-primary" type="submit">Search Joke</button>
                                 </div>
                             </form>
+                            <div class="email-description joke-sentence"><p>Search for a joke by typing a keyword.</p></div>
 
-                            <div class="col-sm-3">
+                            <iscomment> <div class="col-sm-3">
                                 <a class="btn btn-primary" href="${URLUtils.url('Newsletter-Show')}">
                                     ${Resource.msg('button.form.emailsignup', 'homePage', null)}    
                                 </a>
                             </div>
-                            <div class="col-sm-3 email-description">${Resource.msg('description.form.newsletter', 'homePage', null)}</div>
+                            <div class="col-sm-3 email-description">${Resource.msg('description.form.newsletter', 'homePage', null)}</div> </iscomment>
 
                         </div>
                 </div>

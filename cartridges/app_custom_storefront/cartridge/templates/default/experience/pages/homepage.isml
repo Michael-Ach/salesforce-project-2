@@ -9,18 +9,18 @@
     <div class="storepage" id="${pdict.page.ID}">
         <iscomment> <div class="container"> </iscomment>
             <div class="row">
-                <isprint value="${pdict.regions.products1.setClassName("col-6").render()}" encoding="off" />
-                <isprint value="${pdict.regions.products2.setClassName("col-6").render()}" encoding="off" />
+                <isprint value="${pdict.regions.products1.setClassName("col-12 col-lg-6").render()}" encoding="off" />
+                <isprint value="${pdict.regions.products2.setClassName("col-12 col-lg-6").render()}" encoding="off" />
             </div>
             <div class="row">
-                <isprint value="${pdict.regions.products3.setClassName("col-12").render()}" encoding="off" />
+                <isprint value="${pdict.regions.products3.setClassName("col-12 mt-4").render()}" encoding="off" />
             </div>
             <div class="row">
-                <isprint value="${pdict.regions.products4.setClassName("col-6").render()}" encoding="off" />
-                <isprint value="${pdict.regions.products5.setClassName("col-6").render()}" encoding="off" />
+                <isprint value="${pdict.regions.products4.setClassName("col-12 col-lg-6").render()}" encoding="off" />
+                <isprint value="${pdict.regions.products5.setClassName("col-12 col-lg-6").render()}" encoding="off" />
             </div>
             <div class="row">
-                <isprint value="${pdict.regions.products6.setClassName("col-12").render()}" encoding="off" />
+                <isprint value="${pdict.regions.products6.setClassName("col-12 mt-3").render()}" encoding="off" />
             </div>
             <div class="row">
                 <isprint value="${pdict.regions.text.setClassName("col-12").render()}" encoding="off" />

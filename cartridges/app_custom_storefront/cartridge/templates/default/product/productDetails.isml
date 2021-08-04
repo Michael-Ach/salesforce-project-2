@@ -30,8 +30,15 @@
 
             <div class="row">
                 <!-- Product Images Carousel -->
-                <isinclude template="product/components/imageCarousel" />
-
+                <iscomment>Custom start: add cloudinary PGW</iscomment>
+                <isif condition="${pdict.cloudinary && pdict.cloudinary.isEnabled}">
+                    <isinclude template="product/components/cloudinaryGallery" />
+                    <isset name="isBundleOrSet" value="${false}" scope="page" />
+                <iselse>
+                     <!-- Product Images Carousel -->
+                    <isinclude template="product/components/imageCarousel" />
+                </isif>
+                <iscomment>Custom end: add cloudinary PGW</iscomment>
                 <div class="col-12 col-sm-6">
                     <!--Breadcrumbs-->
                     <div class="row">

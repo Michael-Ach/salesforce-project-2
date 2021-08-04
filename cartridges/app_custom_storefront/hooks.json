@@ -27,7 +27,7 @@
         {
             "name": "newsletter.email",
             
-            "script": "./cartridge/scripts/hooks/newsletterEmail.js"
+            "script": "./cartridge/scripts/hooks/newsletterEmail"
         }
 
     ]

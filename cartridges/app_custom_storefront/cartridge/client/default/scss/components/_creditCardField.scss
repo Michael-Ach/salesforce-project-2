@@ -1,0 +1,19 @@
+@import "~base/components/creditCardField";
+
+.card-number-wrapper {
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        right: 3px;
+        background-repeat: no-repeat;
+        // background-image: url('../../images/credit.png');
+        background-size: contain;
+        width: 48px;
+        height: 30px;
+        top: 5px;
+    }
+
+
+}

@@ -1,3 +1,21 @@
 body{
     overflow-x: hidden;
 }
+.home-email-signup {
+    background-color: var(--skin-banner-background-color-2);
+
+    > .container {
+        padding-top: 0.625em;
+        padding-bottom: 0.625em;
+    }
+
+    .email-description {
+        padding-top: 0.375em;
+        color: white;
+    }
+}
+
+.joke-sentence {
+    padding-left: 45px;
+    color: white;
+}
