@@ -366,7 +366,7 @@ var scrollAnimate = require('base/components/scrollAnimate');
                                     .appendTo(document.body)
                                     .attr({
                                         method: 'POST',
-                                        action: data.continueUrl
+                                        action: data.continueUrl  + `?ID=${data.orderID}`
                                     });
 
                                 $('<input>')
