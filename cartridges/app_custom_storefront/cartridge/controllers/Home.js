@@ -30,6 +30,7 @@ server.get('Show', consentTracking.consent, cache.applyDefaultCache, function (r
 
     pageMetaHelper.setPageMetaTags(req.pageMetaData, Site.current);
 
+    // Made changes to utilize the home page designed using page designer
     var page = PageMgr.getPage('big');
 
     if (page && page.isVisible()) {

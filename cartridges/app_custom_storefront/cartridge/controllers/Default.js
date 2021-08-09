@@ -32,6 +32,7 @@ server.get('Start', consentTracking.consent, cache.applyDefaultCache, function (
 
     var magicSearchForm = server.forms.getForm('magic');
 
+    // Made changes to utilize the home page designed using page designer
     var page = PageMgr.getPage('big');
 
     if (page && page.isVisible()) {
