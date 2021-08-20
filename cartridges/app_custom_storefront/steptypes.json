@@ -4426,6 +4426,81 @@
                    ]
                 }
             },
+            {  
+                "@type-id":"custom.CSComponents.SetOnline",
+                "description": "To make the product online",
+                "module": "app_custom_storefront/cartridge/scripts/jobsteps/SetOnline.js",
+                "function":"Run",
+                "parameters":{  
+                   "parameters":[]
+                },
+                "status-codes":{  
+                   "status":[  
+                      {  
+                         "@code":"ERROR",
+                         "description":"Used when an error occurred."
+                      },
+                      {  
+                         "@code":"OK",
+                         "description":"Used when everything went well."
+                      },
+                      {  
+                         "@code":"SKIPPED",
+                         "description":"Used when job is facing a time that is outside of the configured window."
+                      }
+                   ]
+                }
+            },
+            {  
+                "@type-id":"custom.CSComponents.SetTopseller",
+                "description": "To assign topseller badge to a product",
+                "module": "app_custom_storefront/cartridge/scripts/jobsteps/SetTopseller.js",
+                "function":"Run",
+                "parameters":{  
+                   "parameters":[]
+                },
+                "status-codes":{  
+                   "status":[  
+                      {  
+                         "@code":"ERROR",
+                         "description":"Used when an error occurred."
+                      },
+                      {  
+                         "@code":"OK",
+                         "description":"Used when everything went well."
+                      },
+                      {  
+                         "@code":"SKIPPED",
+                         "description":"Used when job is facing a time that is outside of the configured window."
+                      }
+                   ]
+                }
+            },
+            {  
+                "@type-id":"custom.CSComponents.ResetTopseller",
+                "description": "To unassign any badge(custom attribute) assigned to a product",
+                "module": "app_custom_storefront/cartridge/scripts/jobsteps/ResetTopseller.js",
+                "function":"Run",
+                "parameters":{  
+                   "parameters":[]
+                },
+                "status-codes":{  
+                   "status":[  
+                      {  
+                         "@code":"ERROR",
+                         "description":"Used when an error occurred."
+                      },
+                      {  
+                         "@code":"OK",
+                         "description":"Used when everything went well."
+                      },
+                      {  
+                         "@code":"SKIPPED",
+                         "description":"Used when job is facing a time that is outside of the configured window."
+                      }
+                   ]
+                }
+            },
             {
                 "@type-id":"custom.DeleteCustomObjects",
                 "@supports-parallel-execution":"false",

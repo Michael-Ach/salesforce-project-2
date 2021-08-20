@@ -2,7 +2,7 @@
 
 var server = require('server');
 var URLUtils = require('dw/web/URLUtils');
-//Use the following for CSRF protection: add middleware in routes and hidden field on form
+// Use the following for CSRF protection: add middleware in routes and hidden field on form
 var csrfProtection = require('*/cartridge/scripts/middleware/csrf');
 
 server.get(
@@ -46,7 +46,7 @@ server.post(
                             redirectUrl: URLUtils.url('Newsletter-Success').toString()
                         });
 
-                    //INCLUDED - Use a hook to send a confirmation email
+                    // INCLUDED - Use a hook to send a confirmation email
                     dw.system.HookMgr.callHook('newsletter.email', 'send', newsletterForm.email.value);
                     });
                 } catch (e) {
